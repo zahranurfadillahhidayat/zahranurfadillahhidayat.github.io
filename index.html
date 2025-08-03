@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahra Nur Fadillah Hidayat - Legal Professional Portfolio</title>
+    <meta name="description" content="Portfolio of Zahra Nur Fadillah Hidayat, a highly motivated Law Graduate with expertise in legal research, analysis, and writing.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: '#fdf4ff',
+                100: '#fae8ff',
+                200: '#f5d0fe',
+                300: '#f0abfc',
+                400: '#e879f9',
+                500: '#d946ef',
+                600: '#c026d3',
+                700: '#a21caf',
+                800: '#86198f',
+                900: '#701a75',
+              },
+              secondary: {
+                50: '#f5f3ff',
+                100: '#ede9fe',
+                200: '#ddd6fe',
+                300: '#c4b5fd',
+                400: '#a78bfa',
+                500: '#8b5cf6',
+                600: '#7c3aed',
+                700: '#6d28d9',
+                800: '#5b21b6',
+                900: '#4c1d95',
+              },
+              dark: {
+                50: '#f8fafc',
+                100: '#f1f5f9',
+                200: '#e2e8f0',
+                300: '#cbd5e1',
+                400: '#94a3b8',
+                500: '#64748b',
+                600: '#475569',
+                700: '#334155',
+                800: '#1e293b',
+                900: '#0f172a',
+              }
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-in',
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+      .scroll-mt-20 {
+        scroll-margin-top: 5rem;
+      }
+      
+      .gradient-text {
+        background: linear-gradient(90deg, #8b5cf6 0%, #d946ef 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      
+      .section-divider {
+        height: 100px;
+        background: linear-gradient(to bottom, rgba(248, 250, 252, 1), rgba(248, 250, 252, 0));
+      }
+      
+      .floating {
+        animation: float 6s ease-in-out infinite;
+      }
+      
+      .timeline-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        left: 1.25rem;
+        top: 2.5rem;
+        height: calc(100% - 2.5rem);
+        width: 2px;
+        background: #e2e8f0;
+      }
+      
+      .hover-scale {
+        transition: transform 0.3s ease;
+      }
+      
+      .hover-scale:hover {
+        transform: translateY(-5px);
+      }
+
+      /* Fade-in animation for sections */
+      .animate-fade-in {
+        animation: fadeInUp 1s ease forwards;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Button pulse animation */
+      .animate-pulse-btn {
+        animation: pulseBtn 1.5s infinite;
+      }
+      @keyframes pulseBtn {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(192,38,211,0.5);}
+        70% { box-shadow: 0 0 0 10px rgba(192,38,211,0);}
+      }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <a href="#" class="text-2xl font-bold text-dark-800 hover:text-primary-600 transition-colors flex items-center">
+            <span class="mr-2">⚖️</span>
+            <span class="hidden sm:inline">Zahra Nur Fadillah Hidayat</span>
+            <span class="sm:hidden">ZNFH</span>
+          </a>
+          
+          <nav class="hidden md:flex space-x-8">
+            <a href="#about" class="text-dark-600 hover:text-primary-600 transition-colors font-medium">About</a>
+            <a href="#experience" class="text-dark-600 hover:text-primary-600 transition-colors font-medium">Experience</a>
+            <a href="#skills" class="text-dark-600 hover:text-primary-600 transition-colors font-medium">Skills</a>
+            <a href="#awards" class="text-dark-600 hover:text-primary-600 transition-colors font-medium">Awards</a>
+            <a href="#contact" class="text-dark-600 hover:text-primary-600 transition-colors font-medium">Contact</a>
+          </nav>
+          
+          <!-- Mobile menu button -->
+          <button class="md:hidden text-dark-600 hover:text-primary-600" aria-label="Toggle menu" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4">
+          <div class="flex flex-col space-y-3">
+            <a href="#about" class="block px-4 py-2 text-dark-600 hover:bg-slate-100 hover:text-primary-600 rounded transition-colors">About</a>
+            <a href="#experience" class="block px-4 py-2 text-dark-600 hover:bg-slate-100 hover:text-primary-600 rounded transition-colors">Experience</a>
+            <a href="#skills" class="block px-4 py-2 text-dark-600 hover:bg-slate-100 hover:text-primary-600 rounded transition-colors">Skills</a>
+            <a href="#awards" class="block px-4 py-2 text-dark-600 hover:bg-slate-100 hover:text-primary-600 rounded transition-colors">Awards</a>
+            <a href="#contact" class="block px-4 py-2 text-dark-600 hover:bg-slate-100 hover:text-primary-600 rounded transition-colors">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="about" class="scroll-mt-20 pt-16 pb-20 md:pt-24 md:pb-32 relative overflow-hidden animate-fade-in">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary-50 to-secondary-50 opacity-50 z-0"></div>
+        <div class="container mx-auto px-6 relative z-10">
+          <div class="flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+              <h1 class="text-4xl md:text-5xl font-bold text-dark-900 mb-4">
+                <span class="gradient-text">Zahra Nur Fadillah Hidayat</span>
+              </h1>
+              <h2 class="text-2xl md:text-3xl font-semibold text-dark-700 mb-6">Highly Motivated Law Graduate</h2>
+              <p class="text-lg text-dark-600 mb-8 leading-relaxed">
+                I am a Cum Laude graduate from State Islamic University Sunan Gunung Djati with a GPA of 3.74, possessing a strong foundation in legal principles and a keen interest in professional legal management. Proficient in legal research, analysis, writing, and assistance.
+              </p>
+              
+              <div class="flex flex-wrap gap-4">
+                <a href="#contact" class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors shadow-md hover:shadow-lg animate-pulse-btn">
+                  Contact Me
+                </a>
+                <a href="CV.pdf" download target="_blank" class="border border-primary-600 text-primary-600 hover:bg-primary-50 font-medium py-3 px-6 rounded-lg transition-colors">
+                  Download CV
+                </a>
+              </div>
+            </div>
+            
+            <div class="lg:w-1/2 flex justify-center">
+              <div class="relative">
+              <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl floating">
+                <img src="profile.jpg" alt="Zahra Nur Fadillah Hidayat" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute -bottom-4 -right-4 bg-white p-4 rounded-lg shadow-md">
+                <div class="text-center">
+                <p class="text-sm text-dark-500">Graduated with</p>
+                <p class="text-xl font-bold text-primary-600">3.74 GPA</p>
+                </div>
+              </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+      
+      <!-- Education Section -->
+      <section class="py-16 bg-white animate-fade-in">
+        <div class="container mx-auto px-6">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-dark-900 mb-12">Education</h2>
+            
+            <div class="relative">
+              <!-- Timeline item -->
+              <div class="timeline-item pl-12 relative pb-10">
+                <div class="absolute left-0 top-0 w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold text-dark-900 mb-1">Bachelor Degree of Law</h3>
+                <p class="text-secondary-600 font-medium mb-2">State Islamic University Bandung</p>
+                <p class="text-dark-500 text-sm mb-3">Sep 2020 – Aug 2024</p>
+                <p class="text-dark-700">
+                  Graduated with honors (Cum Laude) with a GPA of 3.74/4.00. Focused on Islamic Law and Civil Law with extensive research in legal management and court procedures.
+                </p>
+              </div>
+              
+              <!-- Additional education items can be added here -->
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Experience Section -->
+      <section id="experience" class="scroll-mt-20 py-16 bg-slate-50 animate-fade-in">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center text-dark-900 mb-4">Professional Experience</h2>
+          <p class="text-lg text-center text-dark-600 max-w-2xl mx-auto mb-12">
+            My practical experiences in legal institutions and organizations
+          </p>
+          
+          <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <!-- Experience 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-md hover-scale hover:shadow-lg transition-all">
+              <div class="flex items-start mb-4">
+                <div class="bg-primary-100 p-3 rounded-lg mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-dark-900">Legal Internship</h3>
+                  <p class="text-secondary-600 font-medium">Pengadilan Agama Kuningan</p>
+                  <p class="text-dark-500 text-sm">Jan 2023 – Feb 2023</p>
+                </div>
+              </div>
+              <ul class="space-y-3 text-dark-700">
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span>Accurately inputted and verified 500+ court hearing data into the Case Tracking Information System (SIPP)</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span>Contributed to the preparation of lawsuit and any documents for court proceedings</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span>Assisted 100+ parties in receiving legal aid services at the Legal Aid Post (POSBAKUM)</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Experience 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-md hover-scale hover:shadow-lg transition-all">
+              <div class="flex items-start mb-4">
+                <div class="bg-primary-100 p-3 rounded-lg mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-dark-900">Editorial Team</h3>
+                  <p class="text-secondary-600 font-medium">Al-Jinai' Al-Islami Journal Submission</p>
+                  <p class="text-dark-500 text-sm">Mar 2023 – Mar 2024</p>
+                </div>
+              </div>
+              <ul class="space-y-3 text-dark-700">
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span>Facilitated the peer-review process by selecting appropriate experts for received manuscripts</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span>Edited journal manuscripts to ensure clarity, consistency, and accuracy</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span>Promoted the journal to enhance its reach and credibility among academics and readers</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Experience 3 -->
+            <div class="bg-white p-8 rounded-xl shadow-md hover-scale hover:shadow-lg transition-all">
+              <div class="flex items-start mb-4">
+                <div class="bg-primary-100 p-3 rounded-lg mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-dark-900">Expert Staff at Intellectual Development</h3>
+                  <p class="text-secondary-600 font-medium">HMJ HPI</p>
+                  <p class="text-dark-500 text-sm">Dec 2021 – Dec 2022</p>
+                </div>
+              </div>
+              <ul class="space-y-3 text-dark-700">
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span>Organized and coordinated various activities to enhance students' academic knowledge and skills</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span>Established 10+ collaborations with educational institutions and other organizations</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span>Managed an online platform (Instagram) for sharing academic information</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Experience 4 -->
+            <div class="bg-white p-8 rounded-xl shadow-md hover-scale hover:shadow-lg transition-all">
+              <div class="flex items-start mb-4">
+                <div class="bg-primary-100 p-3 rounded-lg mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-dark-900">Moderator of Discussion Scientific Studies</h3>
+                  <p class="text-secondary-600 font-medium">HMJ HPI</p>
+                  <p class="text-dark-500 text-sm">Feb 2022 – Feb 2022</p>
+                </div>
+              </div>
+              <ul class="space-y-3 text-dark-700">
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span>Facilitated and guided scientific discussions, ensuring productive exchange of ideas</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span>Prepared and organized discussion topics and materials in advance</span>
+                </li>
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span>Managed the flow of discussion by monitoring time and encouraging participation</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Awards Section -->
+      <section id="awards" class="scroll-mt-20 py-16 bg-white animate-fade-in">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center text-dark-900 mb-4">Honors & Awards</h2>
+          <p class="text-lg text-center text-dark-600 max-w-2xl mx-auto mb-12">
+            Recognition of my achievements and excellence in legal studies
+          </p>
+          
+          <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Award 1 -->
+            <div class="bg-slate-50 p-8 rounded-xl shadow-md hover-scale hover:shadow-lg transition-all text-center">
+              <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-dark-900 mb-2">1st Winner of English Speech Competition</h3>
+              <p class="text-secondary-600 font-medium mb-3">SPARTIFEST 2021</p>
+              <p class="text-dark-600">
+                Achieved First Place, demonstrating exceptional public speaking skills and command of English language.
+              </p>
+            </div>
+            
+            <!-- Award 2 -->
+            <div class="bg-slate-50 p-8 rounded-xl shadow-md hover-scale hover:shadow-lg transition-all text-center">
+              <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-dark-900 mb-2">3rd Winner of English Speech Competition</h3>
+              <p class="text-secondary-600 font-medium mb-3">SPARTIFEST 2022</p>
+              <p class="text-dark-600">
+                Achieved Third Place, showcasing persuasive communication and strong command of English language.
+              </p>
+            </div>
+            
+            <!-- Award 3 -->
+            <div class="bg-slate-50 p-8 rounded-xl shadow-md hover-scale hover:shadow-lg transition-all text-center">
+              <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-dark-900 mb-2">2nd Winner of Mootcourt Student Competition</h3>
+              <p class="text-secondary-600 font-medium mb-3">Pengadilan Agama Kuningan 2023</p>
+              <p class="text-dark-600">
+                Achieved Second Place, showcasing excellence in legal drafting and persuasive arguments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Courses Section -->
+      <section class="py-16 bg-slate-50 animate-fade-in">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center text-dark-900 mb-4">Courses & Certifications</h2>
+          <p class="text-lg text-center text-dark-600 max-w-2xl mx-auto mb-12">
+            Additional training to complement my legal education
+          </p>
+          
+          <div class="bg-white p-8 rounded-xl shadow-md max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-6">
+              <!-- Course 1 -->
+              <div class="border-l-4 border-primary-500 pl-4 py-1">
+                <h3 class="text-lg font-bold text-dark-900">Microsoft Office Training and Test/ICT</h3>
+                <p class="text-dark-500 text-sm">Feb 2021 – April 2021</p>
+              </div>
+              
+              <!-- Course 2 -->
+              <div class="border-l-4 border-primary-500 pl-4 py-1">
+                <h3 class="text-lg font-bold text-dark-900">Test of English for Academic (TOEFA)</h3>
+                <p class="text-dark-500 text-sm">Oct 2023</p>
+              </div>
+              
+              <!-- Course 3 -->
+              <div class="border-l-4 border-primary-500 pl-4 py-1">
+                <h3 class="text-lg font-bold text-dark-900">Legal Officer Training Program</h3>
+                <p class="text-dark-500 text-sm">Jan 2025</p>
+              </div>
+              
+              <!-- Course 4 -->
+              <div class="border-l-4 border-primary-500 pl-4 py-1">
+                <h3 class="text-lg font-bold text-dark-900">HR People Analytics Training Course</h3>
+                <p class="text-dark-500 text-sm">Jan 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Skills Section -->
+      <section id="skills" class="scroll-mt-20 py-16 bg-white animate-fade-in">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center text-dark-900 mb-4">Skills & Qualifications</h2>
+          <p class="text-lg text-center text-dark-600 max-w-2xl mx-auto mb-12">
+            My professional competencies and technical abilities
+          </p>
+          
+          <div class="max-w-4xl mx-auto">
+            <!-- Core Skills -->
+            <div class="mb-12">
+              <h3 class="text-2xl font-bold text-dark-900 mb-6 text-center">Core Legal Skills</h3>
+              <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Skill 1 -->
+                <div class="bg-slate-50 p-6 rounded-xl text-center hover-scale transition-all">
+                  <div class="bg-primary-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                  </div>
+                  <h4 class="font-bold text-dark-900 mb-1">Legal Research</h4>
+                  <p class="text-dark-600 text-sm">Case law analysis, statutory interpretation</p>
+                </div>
+                
+                <!-- Skill 2 -->
+                <div class="bg-slate-50 p-6 rounded-xl text-center hover-scale transition-all">
+                  <div class="bg-primary-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                  </div>
+                  <h4 class="font-bold text-dark-900 mb-1">Legal Writing</h4>
+                  <p class="text-dark-600 text-sm">Briefs, memoranda, contracts</p>
+                </div>
+                
+                <!-- Skill 3 -->
+                <div class="bg-slate-50 p-6 rounded-xl text-center hover-scale transition-all">
+                  <div class="bg-primary-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <h4 class="font-bold text-dark-900 mb-1">Case Management</h4>
+                  <p class="text-dark-600 text-sm">Docketing, calendaring, tracking</p>
+                </div>
+                
+                <!-- Skill 4 -->
+                <div class="bg-slate-50 p-6 rounded-xl text-center hover-scale transition-all">
+                  <div class="bg-primary-100 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg>
+                  </div>
+                  <h4 class="font-bold text-dark-900 mb-1">Client Counseling</h4>
+                  <p class="text-dark-600 text-sm">Legal advice, strategy development</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Technical Skills -->
+            <div>
+              <h3 class="text-2xl font-bold text-dark-900 mb-6 text-center">Technical Proficiencies</h3>
+              <div class="bg-slate-50 p-8 rounded-xl">
+                <div class="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h4 class="font-bold text-dark-900 mb-4 flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" />
+                      </svg>
+                      Software
+                    </h4>
+                    <ul class="space-y-3">
+                      <li class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span>Microsoft Office Suite (Word, Excel, PowerPoint)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span>Google Workspace (Docs, Sheets, Drive)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span>Case Tracking Information Systems (SIPP)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h4 class="font-bold text-dark-900 mb-4 flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                      </svg>
+                      Languages
+                    </h4>
+                    <ul class="space-y-3">
+                      <li class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span>Bahasa Indonesia (Native Proficiency)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary-600 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span>English (Elementary Proficiency)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Contact Section -->
+      <section id="contact" class="scroll-mt-20 py-16 bg-gradient-to-br from-primary-50 to-secondary-50 animate-fade-in">
+        <div class="container mx-auto px-6">
+          <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="md:flex">
+              <div class="md:w-1/2 bg-primary-600 p-8 md:p-12 text-white">
+                <h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
+                <p class="mb-8 text-primary-100">
+                  I'm actively seeking opportunities to contribute my legal expertise. Feel free to reach out for collaborations or job opportunities.
+                </p>
+                
+                <div class="space-y-6">
+                  <div class="flex items-start">
+                    <div class="bg-primary-500 p-2 rounded-lg mr-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="font-bold text-lg">Email</h3>
+                      <a href="mailto:zahranhid.workspace@gmail.com" class="text-primary-100 hover:text-white transition-colors">zahranhid.workspace@gmail.com</a>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start">
+                    <div class="bg-primary-500 p-2 rounded-lg mr-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="font-bold text-lg">Phone</h3>
+                      <p>+6282216497230</p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start">
+                    <div class="bg-primary-500 p-2 rounded-lg mr-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c-1.657 0-3-4.03-3-9s1.343-9 3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="font-bold text-lg">Social Media</h3>
+                      <div class="flex space-x-4 mt-1">
+                        <a href="https://linkedin.com/in/zahranfh" target="_blank" class="text-primary-100 hover:text-white transition-colors">
+                          <span class="sr-only">LinkedIn</span>
+                          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="pt-4">
+                    <a href="CV.pdf" download target="_blank" class="inline-block border border-white text-white font-medium py-2 px-6 rounded-lg hover:bg-white hover:text-primary-600 transition-colors animate-pulse-btn">
+                      Download CV
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="md:w-1/2 p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-dark-900 mb-6">Send Me a Message</h2>
+                <form action="https://formsubmit.co/zahranhid.workspace@gmail.com" method="POST" class="space-y-6">
+                  <!-- Add this hidden input to disable captcha (optional) -->
+                  <input type="hidden" name="_captcha" value="false">
+                  <div>
+                    <label for="name" class="block text-sm font-medium text-dark-700 mb-1">Your Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors">
+                  </div>
+                  
+                  <div>
+                    <label for="email" class="block text-sm font-medium text-dark-700 mb-1">Email Address</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors">
+                  </div>
+                  
+                  <div>
+                    <label for="subject" class="block text-sm font-medium text-dark-700 mb-1">Subject</label>
+                    <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors">
+                  </div>
+                  
+                  <div>
+                    <label for="message" class="block text-sm font-medium text-dark-700 mb-1">Message</label>
+                    <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"></textarea>
+                  </div>
+                  
+                  <div>
+                    <button type="submit" class="w-full bg-primary-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-primary-700 transition-colors shadow-md">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-dark-900 text-white py-8">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <p>&copy; 2025 Zahra Nur Fadillah Hidayat. All rights reserved.</p>
+          </div>
+          <div class="flex space-x-6">
+            <a href="#about" class="hover:text-primary-400 transition-colors">About</a>
+            <a href="#experience" class="hover:text-primary-400 transition-colors">Experience</a>
+            <a href="#contact" class="hover:text-primary-400 transition-colors">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Back to top button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all hover:bg-primary-700">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+      </svg>
+    </button>
+    
+    <script>
+      // Back to top button functionality
+      const backToTopButton = document.getElementById('back-to-top');
+      
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.remove('opacity-0', 'invisible');
+          backToTopButton.classList.add('opacity-100', 'visible');
+        } else {
+          backToTopButton.classList.remove('opacity-100', 'visible');
+          backToTopButton.classList.add('opacity-0', 'invisible');
+        }
+      });
+      
+      backToTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      
+      // Close mobile menu when clicking a link
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+      
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    </script>
+</body>
+</html>
